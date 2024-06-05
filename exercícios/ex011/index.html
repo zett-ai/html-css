@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>tente abrir esse site em várops dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <hr>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-r.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <p>tag picture, literalmente diz que ali tem uma imagem</p>
+    <p>tag source, em ordem crescente</p>
+    
+    <h1>Reproduzindo áudio</h1>
+    <!-- <audio src="media/Bossa Sonsa - Quincas Moreira.mp3" controls autoplay></audio> -->
+    <p>bossa nova muito bom</p>
+    <p>control e autoplay pra aparecer no site tá</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/Bossa Sonsa - Quincas Moreira.mp3" type="audio/mpeg">
+        <source src="media/Bossa Sonsa - Quincas Moreira.ogg" type="audio/ogg">
+        <source src="media/Bossa Sonsa - Quincas Moreira.wav" type="audio/wav">
+        
+    </audio>
+    <p>se nenhum desses funcionar, é o navegador que não consegue reproduzir áudios, <a href="media/guanacast-33.mp3">clique aqui</a> para baixar.</p>
+
+    <h2>Resumo</h2>
+    <p>Tags picture(pra imagem) e audio(pra audio :o), "source" pra colocar os arquivos</p>
+    <h2>Atributos novos</h2>
+    <p>"media" pra diferentes tamanhos de tela
+    <p>"preload" - pra audio </p>
+    <p>"autoplay" -  </p>
+    <p>"loop" -  </p>
+    <p>"controls" -  </p>
+    
+</body>
+</html>

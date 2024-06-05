@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover exemplo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p { /* ">" significa que p é filho de div*/
+            display: none; /*none  não mostra na tela*/
+        }
+
+        div:hover {
+            color: rgb(21, 131, 36);
+        }
+
+        div:hover > p {
+            display: block; /*mostra*/
+            color: white;
+            background-color: black;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o pal no texto abaixo</p>
+    <div>
+        passe o pal aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>fim do exemplo</p>
+</body>
+</html>

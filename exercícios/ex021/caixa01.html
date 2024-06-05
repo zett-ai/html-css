@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style> /*shorthands*/
+    
+        h1 { /*box leval*/
+            
+            background-color: rgb(233, 227, 227);
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid lightslategray; /*widht,style,color*/
+
+            padding: 10px; /*top, right,bottom, left. mas se forem todas iguais, só um já dá. Com dois, o primeiro é cima e baixo, o segundo é direito esqueda*/
+            margin: 20px auto 40px auto; /*sentido horário*/
+
+            outline: 20px groove aqua;
+        }
+
+        a { /*box inline*/
+            border: 5px solid red;
+            padding: 6px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas</h1>
+    <p>parágrafos também são exemplos de box-level, mas os <a href="#" target="_blank">links são exemplos de caixas inline-level</a>. Vamos ver como isso funciona</p>
+    <p>pode fazer um inline virar block com a tag "display block e o contrário também</p>
+    <hr>
+    <h2>Vídeo sobre</h2>
+    <picture>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-CPoDvZLQ6k?si=CzOECL_aB1axAq2_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </picture>
+
+
+
+   <!-- useragent é o navegador -->
+</body>
+</html>

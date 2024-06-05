@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(31, 34, 34);
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+            margin: 15px;
+        }
+
+        nav {
+            background-color: rgb(104, 104, 104);
+            padding: 3px;        
+            box-shadow: 1px 8px 18px 1px rgba(0, 0, 0, 0.39);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px 0px;
+            box-shadow: 3px 4px 11px 0px rgb(24, 24, 24);
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+            text-align: right;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 15px;                  
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        section > p {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        } */
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="https://mangadex.org/title/d90ea6cb-7bc3-4d80-8af0-28557e6c4e17/dungeon-meshi" target="blank">Dungeon Meshi</a>
+            <a href="https://mangadex.org/title/1044287a-73df-48d0-b0b2-5327f32dd651/jojo-s-bizarre-adventure-part-7-steel-ball-run"target="blank">Jojo</a>
+            <a href="https://mangadex.org/title/a1c7c817-4e59-43b7-9365-09675a149a6f/one-piece"target="blank">One Piece</a>
+            <a href="https://mangadex.org/title/dc22c201-a2a8-40aa-a23f-69852b0c8d0f/kowloon-generic-romance"target="blank">Kowloon Generic Romance</a>
+            <a href="https://mangadex.org/title/9d3d3403-1a87-4737-9803-bc3d99db1424/the-guy-she-was-interested-in-wasn-t-a-guy-at-all"target="blank">Ki ni Natteru Hito ga Otoko Janakatta</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Pal Água e Café</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>O kilo do secsu aumentou 2%</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque dolor non laboriosam modi porro, adipisci, tenetur laborum praesentium nulla esse magni similique quis ipsa libero quasi natus voluptatum laudantium?</p>
+                <aside>
+                    <p>artigo escrito por Dickeson da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+        <picture>
+            <h2>Vídeos sobre:</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JPMm-jyKOaM?si=2J10u5NcydmOM4Zl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/JACiDRNWjjQ?si=0p19DO3s4Bz--pem" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/PGIrTzQqpqo?si=GV5zCvM0cgtDYqtl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </picture>
+    </main>
+    <footer>
+        <p>Desenvolvido por Zettai</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

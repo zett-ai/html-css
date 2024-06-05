@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+   font-family: sans-serif;
+}
+
+main {
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to left,#026873,#04BF8A); background-attachment: fixed
+}
+
+div.box {
+    background-color: #89ebcff3;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 3px #014b53;
+}
+
+h1 {
+    text-align: center;
+}
+
+p.introducão {
+    text-align: center;
+}
+
+a {
+    color: #01282c;
+}

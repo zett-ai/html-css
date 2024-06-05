@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+             #  = id
+             .  = class
+             :: = pseudo-element
+             >  = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(0, 255, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited { /*link já visitado*/
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active { /*cor do link ao clicar*/
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgb(247, 107, 107);
+            
+        }
+
+        .especial::before { /*adiciona texto antes do link*/
+            content: '\002B60';
+        }
+
+        .especial::after { /*adiciona texto depois do link*/
+            content: '\002B62';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://twitter.com/ZettaiSama" target="_blank" class="especial">Twitter</a></li>
+    </ul>
+</body>
+</html>
