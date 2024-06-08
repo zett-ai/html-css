@@ -1,8 +1,25 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+
+@font-face {
+    font-family: 'Jojo';
+    src: url('../sf_fedora/SF\ Fedora.ttf');
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Outfit', sans-serif;
+    --fonte3: 'Freeman', sans-serif;
+} 
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
@@ -19,6 +36,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: 'Jojo';
+    font-size: 10vh;
 }
 
 header > p {
@@ -38,6 +57,12 @@ a:hover {
 section {
     padding: 10vh 0 10vh 30px;
     line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 3.5vh;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -48,11 +73,26 @@ section.normal {
 section.imagem {
     background-color: darkorchid;
     color: violet;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.295);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.452);
+    display: inline-block; /*caixa que ocupa o tamanho certo do conteúdo*/
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.336);
+    text-shadow: 1.5px 1.5px 0px black;
+}
+
+section#img01 {
+    background-image: url('https://i.pinimg.com/736x/55/1f/1b/551f1b099922e766fc7782a42fa8ec5f.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('https://i.pinimg.com/564x/bb/49/bf/bb49bfde1d4e9dc952358a84084c3e31.jpg');
+    background-position: center center;
 }
 
 footer {
