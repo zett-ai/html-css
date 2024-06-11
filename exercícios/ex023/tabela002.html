@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            background-color: rgb(248, 247, 247);
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.numero {
+            text-align: right;
+        }
+
+        td.total {
+            text-align: center;
+        }
+
+        thead {
+            background-color: rgb(54, 54, 54);
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+        <!-- Anotomia das tabelas grandes
+                thead
+                tbody
+                tfoot -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">44.411.238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.141.626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">xxxx</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">xxxx</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">xxxx</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">xxxx</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">xxxx</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">xxxx</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">xxxx</td>
+            </tr>
+            <tr>
+                <td>TEM ESTADO A PAMPA HEIN</td>
+                <td class="numero">...</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td class="total"><strong>XXXX</strong>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
