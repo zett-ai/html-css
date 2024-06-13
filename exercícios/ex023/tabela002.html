@@ -13,6 +13,15 @@
             width: 500px;
             border-collapse: collapse;
             background-color: rgb(248, 247, 247);
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(99, 189, 219);
+            border-radius: 15px 15px 0 0;
         }
 
         td, th {
@@ -32,20 +41,39 @@
             background-color: rgb(54, 54, 54);
             color: aqua;
         }
+
+        thead > tr > th { /*faz o cabeçalho grudar*/
+            position: sticky;
+            top: -1px;
+            background-color: rgb(54, 54, 54);
+            color: aqua;
+        }
+
+        tbody > tr:nth-child(even) { /*efeito zebrado - odd e even*/
+           background-color: rgb(224, 224, 224); 
+        }
+
+        tfoot {
+            background-color: rgb(54, 54, 54);
+            color: aqua;
+        }
+        
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
 
         <!-- Anotomia das tabelas grandes
+                caption
                 thead
                 tbody
                 tfoot -->
     <table>
+        <caption>População dos Estados</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -97,10 +125,26 @@
                 <td>TEM ESTADO A PAMPA HEIN</td>
                 <td class="numero">...</td>
             </tr>
+            <tr>
+                <td>TEM ESTADO A PAMPA HEIN</td>
+                <td class="numero">...</td>
+            </tr>
+            <tr>
+                <td>TEM ESTADO A PAMPA HEIN</td>
+                <td class="numero">...</td>
+            </tr>
+            <tr>
+                <td>TEM ESTADO A PAMPA HEIN</td>
+                <td class="numero">...</td>
+            </tr>
+            <tr>
+                <td>TEM ESTADO A PAMPA HEIN</td>
+                <td class="numero">...</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="total"><strong>XXXX</strong>
             </tr>
         </tfoot>
