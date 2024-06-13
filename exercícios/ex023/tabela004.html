@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: rgb(90, 90, 90);
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabelas</h1>
+    <table>
+        <caption>Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+            <tbody> 
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Mulheres</th>
+                    <td>Quendrico</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                </tr>
+                <tr>
+                    <td>Julião</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                </tr>
+                <tr>
+                    <td>Peixonauta</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td>Juliano</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                </tr>
+                <tr>
+                    <td>Robalo</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                </tr>
+                <tr>
+                    <td>Peixonauto</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                </tr>
+            </tbody>
+            <tfoot> 
+                <tr>
+                    <th colspan="4" scope="row">Teste</th>
+                    <td>????</td>
+                </tr>
+            </tfoot>
+        </thead>
+    </table>
+</body>
+</html>
