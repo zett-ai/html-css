@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        thead {
+            background-color: rgb(59, 59, 59);
+            color: white;
+        }
+
+        .cnome {     
+            background-color: darkgrey;
+        }
+
+        .cgrupo {
+            background-color: rgb(211, 12, 12);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabelas</h1>
+    
+    <table>
+        <!-- o numero de colunas que tem na tabela 
+             pode fazer com class também -->
+        <colgroup> 
+                <col class="cnome">
+                <col class="cgrupo" span="3">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Quendrico</td>
+                <td>Tem medo</td>
+                <td>Entre 7 anos e 24 milênios</td>
+                <td>Pro player em birra 2</td>
+            </tr>
+            <tr>
+                <td>Julião</td>
+                <td>Sábado à noite</td>
+                <td>No auge</td>
+                <td>Agiota</td>
+            </tr>
+            <tr>
+                <td>Young</td>
+                <td>Gamer</td>
+                <td>"jovem"</td>
+                <td>Caster(a fate series reference)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
