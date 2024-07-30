@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <!-- botoes de radio tem que ter o mesmo name -->
+            <legend>Secsu</legend>
+            <input type="radio" name="secsu" id="masc" value="masc"> <label for="masc">Masculino</label>
+            <input type="radio" name="secsu" id="fem" value="fem"> <label for="fem">Feminino</label>
+            <input type="radio" name="secsu" id="etc" value="etc"> <label for="etc">???</label>
+            <input type="radio" name="secsu" id="fds" checked value="medo"> <label for="fds">tenho medo</label>
+        </fieldset>
+        <fieldset>
+            <legend>Mangás favoritos</legend>
+            <input type="checkbox" name="akane-banashi" id="akane-banashi"> <label for="akane-banashi">Akane-banashi</label>
+            <br>
+            <input type="checkbox" name="Monster" id="Monster"> <label for="Monster">Monster</label>
+            <br>
+            <input type="checkbox" name="One Piece" id="One Piece" checked> <label for="One Piece">One Piece</label>
+            <br>
+            <input type="checkbox" name="Chainsaw Man" id="Chainsaw Man"><label for="Chainsaw Man"> Chainsaw Man</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
